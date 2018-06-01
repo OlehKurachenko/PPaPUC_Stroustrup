@@ -10,7 +10,21 @@
 
 #include <iostream>
 
+#include "weird.h"
+
+using namespace std;
+
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    cout << "main started!" << endl;
+
+    // Testing weird function with local class
+
+    cout << "weird_function_with_local_class(3, 4) = " << weird_function_with_local_class(3, 4) <<
+         endl;
+    cout << "weird_function_with_local_class(1, 0) = " << weird_function_with_local_class(1, 0) <<
+         endl;
+    cout << "weird_function_with_local_class(-3, 12) = "
+         << weird_function_with_local_class(-3, 12) << endl;
+
     return 0;
 }
