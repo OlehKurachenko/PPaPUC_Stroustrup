@@ -1,11 +1,13 @@
-# Practice while reading Stroustrup: Programming
-Principles and Practice Using C++
+# Practice while reading Stroustrup: Programming Principles and Practice Using C++
+
+This is simply a silly test project. Names, structure, ect. are
+like this just for fun.
 
 ## Notes (C++)
 
 ### Local classes
 
-It is possible to have function with class inside of it.
+:exclamation: It is possible to have function with class inside of it.
 This class will have no linkage.
 
 **! It is a bad practice to use such a class**
