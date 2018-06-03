@@ -15,7 +15,8 @@ CC = g++ -std=c++98
 OBJ_DIR = obj
 
 SRC =	main.cpp \
-		weird.cpp
+		weird.cpp \
+		namespaces.cpp
 
 OBJ = $(addprefix $(OBJ_DIR)/, $(SRC:.cpp=.o))
 

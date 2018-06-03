@@ -12,6 +12,7 @@
 #include "../universal/colored_print.h"
 
 #include "weird.h"
+#include "namespaces.h"
 
 using namespace std;
 
@@ -20,6 +21,10 @@ int main() {
 
     cout << colored_print::bold_cyan;
     test_weird_local_class();
+    cout << colored_print::reset;
+
+    cout << colored_print::bold_blue;
+    test_namespaces();
     cout << colored_print::reset;
 
     return 0;
