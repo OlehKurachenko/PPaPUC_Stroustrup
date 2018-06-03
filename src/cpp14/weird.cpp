@@ -10,6 +10,8 @@
 
 #include "weird.h"
 
+using namespace std;
+
 // Bad idea, necessary to check "::" inside of local class
 static int x = 1000;
 
@@ -38,4 +40,13 @@ int weird_function_with_local_class(const int a, const int b) {
 
     HolyLocalClass holy(a, b);
     return holy.beast();
+}
+
+void test_weird_local_class() {
+    cout << "weird_function_with_local_class(3, 4) = " << weird_function_with_local_class(3, 4) <<
+         endl;
+    cout << "weird_function_with_local_class(1, 0) = " << weird_function_with_local_class(1, 0) <<
+         endl;
+    cout << "weird_function_with_local_class(-3, 12) = "
+         << weird_function_with_local_class(-3, 12) << endl;
 }

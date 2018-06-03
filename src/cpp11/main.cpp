@@ -20,14 +20,9 @@ using namespace std;
 int main() {
     cout << "main started!" << endl;
 
-    // Testing weird function with local class
-
-    cout << "weird_function_with_local_class(3, 4) = " << weird_function_with_local_class(3, 4) <<
-         endl;
-    cout << "weird_function_with_local_class(1, 0) = " << weird_function_with_local_class(1, 0) <<
-         endl;
-    cout << "weird_function_with_local_class(-3, 12) = "
-         << weird_function_with_local_class(-3, 12) << endl;
+    cout << colored_print::bold_cyan;
+    test_weird_local_class();
+    cout << colored_print::reset;
 
     cout << colored_print::bold_blue;
     test_constexpr_section();

@@ -15,4 +15,9 @@
 
 int weird_function_with_local_class(const int a, const int b);
 
+/**
+ * Runs some examples of usage of local class with output to std::cout
+ */
+void test_weird_local_class();
+
 #endif //PPAPUCPP_STROUSTRUP_WEIRD_H
