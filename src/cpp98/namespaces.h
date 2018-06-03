@@ -43,6 +43,9 @@ namespace C {
  * It looks line a direct way to hell
  */
 namespace my_own_stdlib {
+    // Actually, it does work (on my PC) bc of weird coincidence - it will not work without
+    // #include <iostream> at the top: it include some things which are using :: to global, and
+    // that allows some things in <string> to use them via ::
     #include <string>
     // Hopefully, THAT doesn't work
     //#include <vector>
