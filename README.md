@@ -30,7 +30,9 @@ This class will have no linkage.
 
 ```::x``` is a variable ```x``` from global namespace
 
-### constexpr
+### ub
+
+```v[++i] = i``` is also undefined
 
 ### const is static
 
@@ -41,6 +43,8 @@ automatically.
 
 1. It can be a good practice to use references not to rewrite
    long element "name" such as ```v[f(x)][g(y)]```
+
+2. ```using``` in headers seems to be a bad practice
 
 ## Questions
 
