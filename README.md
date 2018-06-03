@@ -1,7 +1,7 @@
 # Practice while reading Stroustrup: Programming
 Principles and Practice Using C++
 
-## Notes
+## Notes (C++)
 
 ### Local classes
 
@@ -24,9 +24,27 @@ This class will have no linkage.
   
 * Obviously, class cannot be used anywhere outside the function.
   
-### Global namespace*
+### Global namespace
 
-```::x``` is a variable ```x``` from global namespace 
+```::x``` is a variable ```x``` from global namespace
+
+### constexpr
+
+### const is static
+
+Unline in C, ```const``` qualifier implies ```static```
+automatically.
+
+## Notes (Programmings)
+
+1. It can be a good practice to use references not to rewrite
+   long element "name" such as ```v[f(x)][g(y)]```
+
+## Questions
+
+1. Which types can be used as constexpr
+
+
 
 [local_class_cannot_have_static_members_stackoverflow]: https://stackoverflow.com/questions/8162994/why-arent-static-data-members-allowed-in-local-classes?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
 [short_about_local_class]: https://www.ibm.com/support/knowledgecenter/en/SS3KZ4_9.0.0/com.ibm.xlcpp9.bg.doc/language_ref/cplr062.htm

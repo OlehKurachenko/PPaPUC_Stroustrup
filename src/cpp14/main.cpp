@@ -10,7 +10,10 @@
 
 #include <iostream>
 
+#include "../universal/colored_print.h"
+
 #include "weird.h"
+#include "constexpr.h"
 
 using namespace std;
 
@@ -25,6 +28,10 @@ int main() {
          endl;
     cout << "weird_function_with_local_class(-3, 12) = "
          << weird_function_with_local_class(-3, 12) << endl;
+
+    cout << colored_print::bold_blue;
+    test_constexpr_section();
+    cout << colored_print::reset;
 
     return 0;
 }
